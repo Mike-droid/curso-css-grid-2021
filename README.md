@@ -69,3 +69,79 @@ Todos eran trucos muy raros.
 ## ¿Cómo se llegó al concepto de CSS Grid?
 
 ### ¿CSS Grid es una idea nueva? La evolución de la especificación
+
+El diseño de CSS se basó en las revistas de la época.
+
+Rachel Andrew fue una mujer importante en el desarrollo de CSS.
+
+Jen Simmons, una mujer que colocó muhcas demostraciones que creó para CSS Grid en la web.
+
+A partir de 2017 CSS Grid fue añadido por los navegadores, empezando con Google y terminando con Microsoft en Edge.
+
+### ¿Qué significa Grid para CSS?
+
+- [CSS tricks - Grid guide](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [CSS Reference](https://cssreference.io/)
+- [Learn CSS Grid](https://learncssgrid.com/)
+- [CSS 3 Generator](https://css3generator.com/)
+- [CSS Grid Garden](https://cssgridgarden.com/#es)
+
+Grid ha cambiado complementa la forma de pensar sobre CSS y el diseño.
+
+> No se trata simplemente de agregar propiedades a cada elemento individual. Ahora puedes tener un modelo diferente en el que comienzas con tu diseño priemro y luego incorporas los diferentes elementos en ese diseño. - Bert Bos
+---
+> Es la herramienta de diseño más poderosa que hemos inventado hasta ahora para CSS. - Atkins
+---
+> CSS Grid toma todas esas cosas complicadas que tuvimos que hacer para lograr diseños básciso y lo complemetamente innecesario. - Etemad
+---
+> Estoy entusiasmado con el futuro del diseño CSS. CSS Grid no es el final; en realidad es solo el comienzo. - Whitworth
+
+## Control de alineamiento
+
+### Técnicas de alineamiento antes de CSS Grid: margin y line-height
+
+### Técnicas de alineamiento antes de CSS Grid: table-cell y positions
+
+|Descripción/Position|static|relative|absolute|fixed|
+|--------------------|------|--------|--------|-----|
+Posicionado de acuerdo al flujo normal|✔|✔|❌|❌|
+|Su posición final la determinan top, right, bottom y left|❌|✔|✔|✔|
+|Crea un nuevo contexto de apilamiento|❌|✔|✔|✔|
+
+`z-index != auto` -> relative y absolute
+
+### Técnicas de alineamiento de CSS Grid: pros y contras
+
+No hay una propiedad específica para alinear elementos en CSS2, eran "trucos de magia".
+
+- margin
+  - Ventaja: El valor *autro* alinea horizontalmente cualquier elemento con cualquier ancho.
+  - Desventaja: Alinear verticalmente, ya que, en cada caso, deberán calcularse estos valores.
+- line-height
+  - Ventaja: Correcta alineación.
+  - Desventaja: Si el texto ocupa más de una línea el elemento toma un alto más grande que lo necesario para los cálculos.
+- table-cell
+  - Ventaja: La alineación vertical no está condicionada por fuentes, tamaños de fuentes o alturas de línea.
+  - Desventaja: vertical-align se aplica sólo a elementos Inline.
+
+[Wextensible - Para ver cómo se hacían antes las alineaciones en el antiguo CSS](https://www.wextensible.com/)
+
+Olvidemos las propiedades físicas (margin, padding, etc) y mejor empecemos a pensar en propiedades lógicas.
+
+### Modos de escritura y ejes de alineamiento + Reto
+
+[CSS Direction](https://developer.mozilla.org/es/docs/Web/CSS/direction)
+
+`direction: [ ltr | rtl | inherit ]`
+
+[Writing mode](https://developer.mozilla.org/es/docs/Web/CSS/writing-mode)
+
+### Propiedades físicas y lógicas en CSS + Quiz
+
+[Slides de propiedades físicas y lógicas en CSS](https://www.canva.com/design/DAEPwadrvmg/ldmhPG0L9qzRRhjTaYO9KQ/view?utm_content=DAEPwadrvmg&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=sharebutton)
+
+### Técnicas de alineamiento con Flexbox
+
+### Dibujemos con CSS + Reto
+
+[A single div](https://a.singlediv.com/)

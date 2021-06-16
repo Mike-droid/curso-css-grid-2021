@@ -1,0 +1,133 @@
+:root {
+  --background: #ffd011;
+  --red: #e1421a;
+  --white: #ffffff;
+  --black: ##1f1f1f;
+}
+
+body {
+  background-color: var(--background);
+}
+
+.cut {
+  position: absolute;
+  width: 204px;
+  height: 100px;
+  background-color: var(--background);
+  margin-left: 100px;
+}
+
+.head {
+  width: 200px;
+  height: 200px;
+  background-color: var(--white);
+  margin-top: 100px;
+  margin-left: 100px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.head .straw1 {
+  position: absolute;
+  height: 50px;
+  width: 20px;
+  background-color: white;
+  margin-top: 47px;
+  margin-left: 91px;
+  border: 1px solid black;
+}
+
+.head .straw1 .rec1 {
+  height: 10px;
+  width: 21px;
+  position: absolute;
+  background-color: var(--red);
+  margin-top: 20px;
+  margin-left: -1px;
+}
+
+.head .straw2 {
+  position: absolute;
+  height: 50px;
+  width: 20px;
+  background-color: white;
+  transform: rotate(90deg);
+  margin-top: 32px;
+  margin-left: 55px;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-top: none;
+}
+
+.head .straw2 .rec2 {
+  height: 10px;
+  width: 21px;
+  position: absolute;
+  background-color: var(--red);
+  margin-top: 14px;
+  margin-left: -1px;
+}
+
+.head .nose {
+  background-color: var(--red);
+  width: 15px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: 95px;
+  margin-top: 140px;
+}
+
+.head .eyes {
+  height: 40px;
+  width: 130px;
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.head .eyes .left,
+.head .eyes .right {
+  width: 50px;
+  height: 40px;
+  background-color: var(--white);
+  border-radius: 50%;
+  border: black solid 1px;
+}
+
+.head .eyes .left .pupil-left,
+.head .eyes .right .pupil-right {
+  height: 30px;
+  width: 20px;
+  background-color: black;
+  position: absolute;
+  border-radius: 50%;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.head .mouth {
+  background-color: black;
+  height: 30px;
+  width: 60px;
+  position: absolute;
+  margin-top: 160px;
+  margin-left: 70px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  transform: rotate(180deg);
+}
+
+.head .mouth .tongue {
+  width: 15px;
+  height: 25px;
+  background-color: var(--red);
+  border-radius: 25%;
+  position: absolute;
+  margin-left: 20px;
+  margin-top: -10px;
+}
