@@ -1,0 +1,160 @@
+body {
+  font-family: 'Staatliches', cursive;
+}
+
+.table {
+  display: grid;
+  /* grid-template-columns: repeat(5, 20px);
+  grid-template-rows: repeat(5, 20px); */
+  grid-template: repeat(2, 350px) / repeat(3, 250px); /*Filas, Columnas*/
+  gap: 15px;
+}
+
+.title {
+  margin-inline-start: 15px;
+}
+
+.title_number {
+  font-size: 72px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.specific_title {
+  font-size: 20px;
+}
+
+.movie1,
+.movie2,
+.movie3,
+.movie4,
+.movie5,
+.movie6 {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie1 .title_number,
+.movie1 .star_wars,
+.movie2 .title_number,
+.movie2 .star_wars,
+.movie3 .title_number,
+.movie3 .star_wars {
+  color: #8e7021;
+}
+
+.star_wars {
+  text-transform: uppercase;
+  font-size: 48px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.movie1 ,
+.movie2 ,
+.movie3 {
+  background: rgb(201,166,108);
+  background: linear-gradient(175deg, rgba(201,166,108,1) 40%, rgba(247,246,238,1) 100%);
+}
+
+.movie4 ,
+.movie5 ,
+.movie6 {
+  background: rgb(199,199,199);
+  background: linear-gradient(152deg, rgba(199,199,199,1) 29%, rgba(249,249,249,1) 100%);
+}
+
+.movie4 .title_number,
+.movie4 .star_wars,
+.movie5 .title_number,
+.movie5 .star_wars ,
+.movie6 .title_number ,
+.movie6 .star_wars {
+  color: #98999b;
+}
+
+.sables {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#sableAzul1 {
+  transform: rotate(15deg);
+}
+
+#sableRojo1 {
+  transform: rotate(135deg);
+}
+
+#sableAzul1 .mango,
+#sableRojo1 .mango,
+#sableAzul2 .mango,
+#sableVerde1 .mango,
+#sableAzul3 .mango,
+#sableAzul4 .mango,
+#sableAzul5 .mango,
+#sableAzul6 .mango,
+#sableRojo2 .mango,
+#sableVerde2 .mango,
+#sableVerde2 .mango,
+#sableRojo3 .mango {
+  width: 10px;
+  height: 20px;
+  background-color: silver;
+  border: 1px solid black;
+}
+
+#sableAzul1 .sable1,
+#sableRojo1 .sable2,
+#sableRojo1 .sable3,
+#sableAzul2 .sable4,
+#sableVerde1 .sable5,
+#sableAzul3 .sable6,
+#sableAzul4 .sable7,
+#sableAzul5 .sable8,
+#sableAzul6 .sable9,
+#sableRojo2 .sable10,
+#sableVerde2 .sable11,
+#sableRojo3 .sable12 {
+  width: 10px;
+  height: 60px;
+  margin-inline-start: 1px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+#sableAzul1 .sable1,
+#sableAzul2 .sable4,
+#sableAzul3 .sable6,
+#sableAzul4 .sable7,
+#sableAzul5 .sable8,
+#sableAzul6 .sable9 {
+  background-color: cornflowerblue;
+}
+
+#sableRojo1 .sable2,
+#sableRojo2 .sable10,
+#sableRojo3 .sable12 {
+  background-color: firebrick;
+}
+
+#sableRojo1 .sable3 {
+  background-color: firebrick;
+  transform: rotate(180deg);
+}
+
+#sableVerde1 .sable5,
+#sableVerde2 .sable11 {
+  background-color: forestgreen;
+}
+
+#sableAzul3 {
+  transform: rotate(45deg);
+  margin-inline-start: 170px;
+}
+
+#sableAzul4 {
+  transform: rotate(315deg);
+  margin-inline-end: 170px;
+}

@@ -145,3 +145,63 @@ Olvidemos las propiedades físicas (margin, padding, etc) y mejor empecemos a pe
 ### Dibujemos con CSS + Reto
 
 [A single div](https://a.singlediv.com/)
+
+## Conceptos generales para comenzar a trabajar con CSS Grid
+
+### Grid y las relaciones padre e hijos inmediatos + Quíz
+
+Debemos tener bien estructurado el HTML para poder manejarlo correctamente desde CSS.
+
+### Lines, tracks, cell, area, gutters, grid axis, grid row, grid column + Reto
+
+### ¡Iniciemos nuestro proyecto! Fase de creatividad e identificación de elementos
+
+- Temáticas: Star wars
+- Figuras: Cuadros
+- Imágenes: Star Wars
+- Fuente: google fonts
+- Paleta de colores: coolors
+
+## Propiedades y valores para el elemento padre
+
+### Creando nuestro contenedor: ¿display: grid o display: inline-grid?
+
+Display define el tipo de visualización de un elemento
+
+A tomar en cuenta: valores *internos* y valores *externos*
+
+Caundo dices **Display:Grid** lo que realmente estás diciendo es **Display:Block Grid** (en el nivel externo, pero interno es grid)
+
+En CSS3 se agregaron nuevos displays:
+
+- flex
+- inline-flex
+- grid
+- inline-grid
+
+### Creando filas, columnas y espaciado + Reto
+
+### Funciones: repeat(), minmax() y fit-content() + Quíz
+
+```css
+.container {
+  display: grid;
+  /*grid-template-columns: 1fr 1fr 1fr;*/
+  grid-template-columns: repeat(3, 1fr); /*Better*/
+  grid-template-columns: repeat(3, minmax(200px, 300x)); /*Indicates the minimum and maximum size of the cards inside the container*/
+}
+```
+
+## Propiedades y valores para los elementos hijos
+
+### ¡Manos al código! Construcción del proyecto
+
+### Alineameinto en los elementos hijos + Quiz
+
+- justify-self (row axis)
+- align-self (column axis)
+- place-self (align-self / justify-self)
+
+### ¡Manos al código! Fase de ubicación y alineamiento
+
+### Continuando con la fase de ubicación y alineamiento
