@@ -205,3 +205,7 @@ En CSS3 se agregaron nuevos displays:
 ### ¡Manos al código! Fase de ubicación y alineamiento
 
 ### Continuando con la fase de ubicación y alineamiento
+
+## Lo que podemos lograr adicionalmente con CSS Grid
+
+### Responsive y CSS Grid

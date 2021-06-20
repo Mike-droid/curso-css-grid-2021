@@ -10,7 +10,7 @@ body {
   display: grid;
 }
 
-.charizard {
+.charmander {
   display: grid;
   grid-template: repeat(18, 30px) / repeat(21, 30px);
 }

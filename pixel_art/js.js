@@ -1,5 +1,5 @@
-const charizard = document.getElementById('charizard');
+const charmander = document.getElementById('charmander');
 
 for (let index = 1; index <= 378; index++) {
-  charizard.innerHTML += `<div class="a${index}"></div>`
+  charmander.innerHTML += `<div class="a${index}"></div>`
 }
